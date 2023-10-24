@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+.book-wrapper {
+    width: 80%;
+    opacity: 1;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #b69200;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+  .book-title-wrapper h3{
+    background-image: linear-gradient(78.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
+    font-size: 4vw;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    z-index: 100;
+    font-family: 'Belanosima', sans-serif;
+  }
+  
+  .book-title-wrapper{
+    padding-top: 50px;
+    text-align: center;
+  }
+
+
+
+
+  /*  */
+  
+  

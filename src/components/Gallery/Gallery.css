@@ -1,0 +1,33 @@
+
+.gall{
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+.but{
+    button{
+        background: linear-gradient(51deg, #FFB26B, #edbb3c, #E5BC50, #A47E3B);
+        border: none;
+        color: black;
+        padding: 10px 15px;
+        width: 10%;
+        border-radius: 35px;
+        cursor: pointer;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+}
+
+@media (max-width: 768px) {
+    .gall {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .but {
+      font-size: 14px;
+    }
+  }
+  

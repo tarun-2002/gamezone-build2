@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+:root {
+    --color-112d32 :#112d32;
+    --color-254E58 : #254E58;
+    --color-88bdbc:#88bdbc;
+    --color-6e6658:#6e6658;
+    --color-white:white;
+    --color-f4e9dd:#f4e9dd;
+    }
+
+.gb-reviews{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-112d32);
+    overflow: hidden;
+    padding-bottom: 60px;
+  
+}
+.swiper {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+   
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px) ;
+
+   
+  }
+  .swiper-slide-active{
+    filter: blur(0px);
+ 
+    
+  }
+  .gb-quote img{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity:0.2;
+  }
+  .gb-testimonialBox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: var(--color-254E58);
+   
+  }
+  .gb-testimonialBox .gb-details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  .gb-testimonialBox .gb-details .gb-imgBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  
+    margin-right: 10px;
+  }
+  .gb-testimonialBox .gb-details .gb-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.gb-testimonialBox .gb-details h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-6e6658);
+   
+    line-height: 1.1rem;
+}
+.gb-testimonialBox .gb-details h3 span{
+    font-size: 12px;
+    color: var(--color-88bdbc);
+  
+}
+.gb-swiper-container-3d .gb-swiper-slide-shadow-left,
+.gb-swiper-container-3d .gb-swiper-slide-shadow-right{
+    background-image: none;
+ 
+}
+.gb-testi h3{
+    color:var(--color-f4e9dd);
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+   
+}
+.gb-testi{
+    background-color: var(--color-112d32);
+    padding-top: 20px;
+   
+}
+
+.gb-swiper-slide{
+    width: 320px;
+    height: 450px;
+    background-color: var(--color-f4e9dd);
+    border-radius: 30px;
+}

@@ -1,0 +1,35 @@
+
+  
+  .loader__spinner {
+    
+
+    border: 10px solid rgb(60, 60, 60); /* Light gray color */
+    border-top: 10px solid #d39e11; /* Blue color */
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: spin 1s linear infinite; /* Animation properties */
+    display: block;
+    margin:0 auto;
+    color: #f5deb3;
+
+  }
+  
+  .loader__logo img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+ 

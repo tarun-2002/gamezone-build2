@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Ysabeau Office', sans-serif;
+  /* Add any other global styles here */
+}
+
+/* Form styles */
+.form-container {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 25px;
+}
+
+.form-input[type="date"] {
+  /* Additional styles for date input */
+  position: relative;
+  padding-right: 25px; /* Leave space for the icon */
+}
+
+/* Remove default arrow icon for date input */
+.form-input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Style date selector icon */
+.form-input[type="date"]::before {
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.form-input:focus {
+  border-color: #555;
+}
+
+/* Styling for time slot selector */
+#time {
+  /* Additional styles for time input */
+}
+
+/* Optional styles for image upload input */
+#image {
+  /* Add any specific styles for image upload here */
+}
+
+/* Styling for the custom input design */
+.timeslot-writing label {
+  color: wheat;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.timeslot-writing input {
+  color: white;
+  font-size: 25px;
+}
+.timeslot-writing select {
+  color: white;
+  font-size: 25px;
+  border-color: #edbb3c;
+}
+
+.writing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.writing input,
+.writing textarea {
+  margin-top: 1.2em;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #80808080;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.writing label {
+  position: absolute;
+  top: calc(4px + 0.01em);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  color: wheat;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.writing input:focus ~ label,
+.writing textarea:focus ~ label,
+.writing input.has-text ~ label,
+.writing textarea.has-text ~ label {
+  top: 0px;
+  font-size: 0.9em;
+}
+
+.writing span {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #80808080;
+  display: flex;
+  justify-content: center;
+}
+
+.writing input:invalid ~ span,
+.writing textarea:invalid ~ span {
+  background: linear-gradient(51deg, #FFB26B, #edbb3c, #E5BC50, #A47E3B);
+}
+
+.writing span:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #ff0000;
+  transition: width 0.5s ease;
+}
+
+
+.writing input:focus ~ span:before,
+.writing textarea:focus ~ span:before {
+  width: 100%;
+}
+
+/* Optional styles for textarea */
+.textarea textarea {
+  overflow: auto;
+  min-height: calc(1em + 20px);
+  height: 1.2em;
+  overflow: hidden;
+  resize: none;
+}
+
+/* Additional styles for submit button */
+.form-submit {
+  /* Add any specific styles for the submit button here */
+}
+
+.posi {
+  padding: 15px 80px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .writing{
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .timeslot-writing{
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  /* Adjust the form input width and padding for smaller screens */
+  .form-input {
+    padding: 6px;
+  }
+
+  /* Adjust the label font size for smaller screens */
+  .writing label,
+  .timeslot-writing label {
+    font-size: 20px;
+  }
+
+  /* Adjust the input font size for smaller screens */
+  .writing input,
+  .writing textarea,
+  .timeslot-writing input {
+    font-size: 18px;
+  }
+
+  /* Adjust the submit button font size for smaller screens */
+  .form-submit {
+    font-size: 20px;
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
+button{
+  background: linear-gradient(51deg, #FFB26B, #edbb3c, #E5BC50, #A47E3B);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  width: 60%;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.form-container{
+  text-align: center;
+}
+.qr-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  }
+
+.qr{
+background: linear-gradient(51deg, #FFB26B, #edbb3c, #E5BC50, #A47E3B);
+border-radius: 50px;
+width: 33%;
+}
+.qr img{
+  width: 100%;
+  padding: 25px;
+}
+
+.qr-heading{
+  background-image: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
+  background-size: 100%;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+}
+.qr-detail{
+  color: #eac460;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+input[type=file]::file-selector-button {
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #d19a08;
+  transition: 1s;
+  border-color: black;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: wheat;
+  border-color: black;
+}
+.instruct li h1{
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-align:justify;
+}
+ul{
+color: #ccc;}
+
+@media (max-width: 768px) {
+  .qr {
+    width: 90%;
+  }
+
+  .qr-heading {
+    font-size: 24px;
+  }
+
+  .qr-detail {
+    font-size: 20px;
+  }
+
+  .instruct li h1 {
+    font-size: 18px;
+  }
+}
